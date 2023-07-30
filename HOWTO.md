@@ -46,5 +46,8 @@ WordPress管理画面のサイドメニュー"All-in-One WP Migration"にアク�
 ### 送信されたはずのメールが届かない
 SMTP接続されない場合はLocalの中に届いている可能性があります。"UTILITIES"タブから"MailHog"を開くと、メールの受信ボックスが表示されます。
 ### エクスポートしたデータのサイズが大きくてインポート出来ない
-
+1. Localのサイト名を右クリックして"Go to site folder"をクリックします。
+2. "サイト名のフォルダ/conf/php/php.ini.hbs"を任意のエディタで開きます。
+3. "upload_max_filesize"の項目の数値を上げて上書き保存します。
+4. Localで"Stop site"→"Start site"を実行して環境を再起動します。
 
